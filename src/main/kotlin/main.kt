@@ -24,11 +24,11 @@ fun main() {
     println("nome: ${gui.nome}")
     println("cpf: ${gui.cpf}")
     println("salario: ${gui.salario}")
-    println("Salario + bonificacao: ${gui.bonificacao()}")
+    println("Salario + bonificacao: ${gui.bonificacao}")
 
     println(" ")
 
-    if(gui.autentica((123)))
+    if(gui.autentica((4321)))
         println("Autenticou com sucesso")
     else
         println("falha ao autenticar ")
