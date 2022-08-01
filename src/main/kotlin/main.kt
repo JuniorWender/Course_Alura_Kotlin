@@ -3,12 +3,34 @@ fun main() {
     val alex = Funcionario(
         nome = "Alex",
         cpf = "111.111.111-11",
-        salario = 1000.0
-
+        salario = 1000.0,
     )
-    println("nome: ${alex.nome}")
-    println("cpf: ${alex.cpf}")
-    println("salario: ${alex.salario}")
-    println("bonificacao: ${alex.bonificacao()}")
+
+    val fran = Gerente(
+        nome = "Fran",
+        cpf = "222.222.222-22",
+        salario = 2000.0,
+        senha = 1234
+    )
+
+    val gui = Diretor(
+        nome = "Gui",
+        cpf = "333.333.333-33",
+        salario = 4000.0,
+        senha = 4321,
+        plr = 200.0
+    )
+
+    println("nome: ${gui.nome}")
+    println("cpf: ${gui.cpf}")
+    println("salario: ${gui.salario}")
+    println("Salario + bonificacao: ${gui.bonificacao()}")
+
+    println(" ")
+
+    if(gui.autentica((123)))
+        println("Autenticou com sucesso")
+    else
+        println("falha ao autenticar ")
 
 }
