@@ -1,43 +1,38 @@
 fun main() {
     println("Bem vindo ao bytebank")
-    val alex = Funcionario(
-        nome = "Alex",
-        cpf = "111.111.111-11",
-        salario = 1000.0,
+
+    val contaCorrente = ContaCorrente(
+        titular = "Alex",
+        numero = 1000
     )
 
-    val fran = Gerente(
-        nome = "Fran",
-        cpf = "222.222.222-22",
-        salario = 2000.0,
-        senha = 1234
+    val contaPoupanca = ContaPoupanca(
+        titular = "Fran",
+        numero = 1001
     )
 
-    val gui = Diretor(
-        nome = "Gui",
-        cpf = "333.333.333-33",
-        salario = 4000.0,
-        senha = 4321,
-        plr = 200.0
-    )
+    contaCorrente.deposita(1000.0)
+    contaPoupanca.deposita(1000.0)
 
-    println("nome: ${gui.nome}")
-    println("cpf: ${gui.cpf}")
-    println("salario: ${gui.salario}")
-    println("Salario + bonificacao: ${gui.bonificacao}")
+    println("saldo Corrente: ${contaCorrente.saldo}")
+    println("saldo poupanca: ${contaPoupanca.saldo}")
+    println("")
 
-    println(" ")
+    contaCorrente.saca(100.0)
+    contaPoupanca.saca(100.0)
 
-    if(gui.autentica((4321)))
-        println("Autenticou com sucesso")
-    else
-        println("falha ao autenticar ")
+    println("saldo Apos saque Corrente: ${contaCorrente.saldo}")
+    println("saldo Apos saque poupanca: ${contaPoupanca.saldo}")
+    println("")
 
-    val calculadora = CalculadoraBonificacao()
-    calculadora.registra(alex)
-    calculadora.registra(fran)
-    calculadora.registra(gui)
+    contaCorrente.transfere(100.0, contaPoupanca)
+    println("saldo corrente apos transferir para poupanca: ${contaCorrente.saldo}")
+    println("saldo poupanca apos receber transferencia: ${contaPoupanca.saldo}")
+    println("")
 
-    println("total de bonificacao: ${calculadora.total}")
+    contaPoupanca.transfere(100.0, contaCorrente)
+    println("saldo corrente apos receber transferencia: ${contaCorrente.saldo}")
+    println("saldo poupanca apos transferir para corrente: ${contaPoupanca.saldo}")
+    println("")
 
 }
