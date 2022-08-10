@@ -1,6 +1,6 @@
-package modelo
+package Alura_Kotlin.JuniorWender.GitHub.modelo
 
-import modelo.Funcionario // fully qualified name
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Funcionario // fully qualified name
 
 class Auxiliar(
     nome: String,

@@ -1,5 +1,5 @@
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+import Alura_Kotlin.JuniorWender.GitHub.modelo.ContaCorrente
+import Alura_Kotlin.JuniorWender.GitHub.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
     val contaAlex = ContaCorrente(titular = "Alex", numero = 1000)

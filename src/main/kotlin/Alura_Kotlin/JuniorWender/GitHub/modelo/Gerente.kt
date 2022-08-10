@@ -1,6 +1,6 @@
-package modelo
+package Alura_Kotlin.JuniorWender.GitHub.modelo
 
-import modelo.FuncionarioAdmin
+import Alura_Kotlin.JuniorWender.GitHub.modelo.FuncionarioAdmin
 
 class Gerente(
     nome: String,

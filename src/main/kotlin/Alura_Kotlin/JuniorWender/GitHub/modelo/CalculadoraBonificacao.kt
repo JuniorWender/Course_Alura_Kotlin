@@ -1,6 +1,6 @@
-package modelo
+package Alura_Kotlin.JuniorWender.GitHub.modelo
 
-import modelo.Funcionario
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Funcionario
 
 class CalculadoraBonificacao {
 

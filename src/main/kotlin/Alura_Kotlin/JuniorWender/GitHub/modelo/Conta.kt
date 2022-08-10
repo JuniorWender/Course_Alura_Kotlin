@@ -1,4 +1,4 @@
-package modelo
+package Alura_Kotlin.JuniorWender.GitHub.modelo
 
 abstract class Conta(
     var titular: String,

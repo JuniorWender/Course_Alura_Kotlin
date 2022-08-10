@@ -1,7 +1,7 @@
-import modelo.Analista
-import modelo.CalculadoraBonificacao
-import modelo.Diretor
-import modelo.Gerente
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Analista
+import Alura_Kotlin.JuniorWender.GitHub.modelo.CalculadoraBonificacao
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Diretor
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Gerente
 
 fun testaFuncionarios() {
     val alex = Analista(

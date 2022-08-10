@@ -1,6 +1,6 @@
-package modelo
+package Alura_Kotlin.JuniorWender.GitHub.modelo
 
-import modelo.Conta
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Conta
 
 class ContaPoupanca(
     titular: String,

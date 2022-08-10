@@ -1,7 +1,7 @@
-import modelo.Cliente
-import modelo.Diretor
-import modelo.Gerente
-import modelo.SistemaInterno
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Cliente
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Diretor
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Gerente
+import Alura_Kotlin.JuniorWender.GitHub.modelo.SistemaInterno
 
 fun testaAutenticacao() {
     val gerente = Gerente(
