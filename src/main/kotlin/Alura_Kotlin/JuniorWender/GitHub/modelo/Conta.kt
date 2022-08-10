@@ -1,7 +1,7 @@
 package Alura_Kotlin.JuniorWender.GitHub.modelo
 
 abstract class Conta(
-    var titular: String,
+    var titular: Cliente,
     val numero: Int
 ) {
     var saldo = 0.0

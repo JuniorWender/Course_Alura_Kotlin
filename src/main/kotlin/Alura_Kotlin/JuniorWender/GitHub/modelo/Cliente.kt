@@ -1,7 +1,7 @@
 package Alura_Kotlin.JuniorWender.GitHub.modelo
 
 class Cliente(
-    val nome: String,
+    var nome: String,
     val cpf: String,
     private val senha: Int
 ) : Autenticavel {

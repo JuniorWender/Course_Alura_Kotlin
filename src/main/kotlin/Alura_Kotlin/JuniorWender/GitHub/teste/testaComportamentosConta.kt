@@ -1,11 +1,17 @@
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Cliente
 import Alura_Kotlin.JuniorWender.GitHub.modelo.ContaCorrente
 import Alura_Kotlin.JuniorWender.GitHub.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
-    val contaAlex = ContaCorrente(titular = "Alex", numero = 1000)
+
+    val alex = Cliente(nome = "Alex", cpf = "", senha = 1)
+
+    val contaAlex = ContaCorrente(titular = alex, numero = 1000)
     contaAlex.deposita(valor = 200.0)
 
-    val contaFran = ContaPoupanca(titular = "Fran", numero = 1001)
+    val fran = Cliente(nome = "Fran" , cpf = "" , senha = 2)
+
+    val contaFran = ContaPoupanca(titular = fran, numero = 1001)
     contaFran.deposita(valor = 300.0)
 
     println(contaAlex.titular)

@@ -1,14 +1,20 @@
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Cliente
 import Alura_Kotlin.JuniorWender.GitHub.modelo.ContaCorrente
 import Alura_Kotlin.JuniorWender.GitHub.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
+
+    val alex = Cliente( "Alex" , "" , 2)
+
     val contaCorrente = ContaCorrente(
-        titular = "Alex",
+        titular = alex,
         numero = 1000
     )
 
+    val fran = Cliente( "Fran" , "", 1)
+
     val contaPoupanca = ContaPoupanca(
-        titular = "Fran",
+        titular = fran,
         numero = 1001
     )
 

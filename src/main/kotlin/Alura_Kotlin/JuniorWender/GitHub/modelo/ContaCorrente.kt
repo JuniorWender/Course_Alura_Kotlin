@@ -3,7 +3,7 @@ package Alura_Kotlin.JuniorWender.GitHub.modelo
 import Alura_Kotlin.JuniorWender.GitHub.modelo.Conta
 
 class ContaCorrente(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : Conta(
     titular = titular,
