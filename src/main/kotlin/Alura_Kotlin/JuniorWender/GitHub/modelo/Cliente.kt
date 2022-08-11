@@ -3,8 +3,8 @@ package Alura_Kotlin.JuniorWender.GitHub.modelo
 class Cliente(
     var nome: String,
     val cpf: String,
-    var Endereco: Endereco = Endereco(),
-    private val senha: Int
+    private val senha: Int,
+    var Endereco: Endereco = Endereco()
 ) : Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
