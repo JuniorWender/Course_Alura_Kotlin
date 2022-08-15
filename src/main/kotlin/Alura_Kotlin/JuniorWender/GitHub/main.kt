@@ -1,13 +1,12 @@
-import Alura_Kotlin.JuniorWender.GitHub.modelo.*
+import Alura_Kotlin.JuniorWender.GitHub.modelo.Endereco
 
 fun main() {
     println("Bem vindo ao bytebank")
 
+    val endereco = Endereco()
 
-    val alex = Cliente(nome = "alex", cpf= "" , senha = 1)
-    val contaPoupanca = ContaPoupanca(titular = alex,numero = 1000)
-    val contaCorrente = ContaCorrente(titular = alex , numero = 1001)
+    val enderecoNovo = Endereco()
 
-    testaContasDiferentes()
-    println("total de contas: ${Conta.total}")
+    println(endereco)
+
 }

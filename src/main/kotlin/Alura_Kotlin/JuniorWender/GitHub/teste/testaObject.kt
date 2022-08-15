@@ -1,7 +1,6 @@
 package Alura_Kotlin.JuniorWender.GitHub.teste
 
-import Alura_Kotlin.JuniorWender.GitHub.modelo.Autenticavel
-import Alura_Kotlin.JuniorWender.GitHub.modelo.SistemaInterno
+import Alura_Kotlin.JuniorWender.GitHub.modelo.*
 
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -55,4 +54,9 @@ fun testaObject() {
 
 //    Contando.total++
 
+    val alex = Cliente(nome = "alex", cpf= "" , senha = 1)
+    val contaPoupanca = ContaPoupanca(titular = alex,numero = 1000)
+    val contaCorrente = ContaCorrente(titular = alex , numero = 1001)
+
+    println("total de contas: ${Conta.total}")
 }
